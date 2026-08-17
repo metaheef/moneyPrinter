@@ -89,7 +89,19 @@ function AppContent() {
       gap: 0
     }}>
       <Header solPrice={solPrice} network={network} isConnected={isConnected}>
-        <WalletMultiButton style={{ backgroundColor: 'var(--bg-primary)', border: 'var(--border)', color: 'var(--text-primary)', fontFamily: 'var(--font-mono)' }} />
+        <WalletMultiButton style={{
+          backgroundColor: 'transparent',
+          border: '1px solid var(--green-primary)',
+          color: 'var(--green-primary)',
+          fontFamily: 'var(--font-mono)',
+          fontSize: '0.75rem',
+          fontWeight: '700',
+          letterSpacing: '1px',
+          padding: '6px 14px',
+          height: '34px',
+          borderRadius: '3px',
+          boxShadow: '0 0 8px rgba(0,255,65,0.3)',
+        }} />
       </Header>
       
       <AlertBanner alerts={alerts} />
